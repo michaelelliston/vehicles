@@ -3,14 +3,14 @@ public class Main {
     public static void main(String[] args) {
         SemiTruck semiTruck = new SemiTruck();
         Car car = new Car();
-        Moped moped = new Moped();
+        Moped moped = new Moped("Red", 2, "Gas");
         Hovercraft hovercraft = new Hovercraft();
 
         car.setColor("Blue");
         System.out.println("The car is: " + car.getColor());
 
         moped.setNumberOfPassengers(1);
-        System.out.println("The moped has " + moped.getNumberOfPassengers() + " passenger(s).");
+        System.out.println("The moped has " + moped.getNumberOfPassengers() + " passenger(s), is " + moped.getColor() + ", and has " + moped.getNumberOfWheels() + " wheels.");
 
         hovercraft.setVehicleWeight(1500);
         System.out.println("The hovercraft has a weight of " + hovercraft.getVehicleWeight() + " pounds.");

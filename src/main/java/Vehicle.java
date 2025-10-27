@@ -12,6 +12,14 @@ public class Vehicle {
     int turnRadius;
     boolean isOn;
 
+    public Vehicle() {
+
+    }
+
+    public Vehicle(String color) {
+        this.color = color;
+    }
+
     public String getColor() {
         return color;
     }
